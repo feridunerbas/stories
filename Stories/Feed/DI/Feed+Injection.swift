@@ -11,9 +11,8 @@ import Resolver
 extension Resolver {
 	
 	static func registerFeed() {
-		
 		register { FeedViewController() }
-		
+		register { FeedViewModelImplementation() as FeedViewModel }
 	}
 	
 }

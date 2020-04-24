@@ -11,3 +11,7 @@ import Foundation
 protocol FeedViewModel: BaseViewModel {
 	
 }
+
+class FeedViewModelImplementation: BaseViewModel, FeedViewModel {
+	
+}
