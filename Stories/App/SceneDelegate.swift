@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	}
 	
 	private func initialViewController() -> UIViewController {
-		let vc: FeedViewController = Resolver.resolve()
+		let vc: StoryPlayerViewController = Resolver.resolve()
 		return vc
 	}
 }

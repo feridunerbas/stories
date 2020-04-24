@@ -1,14 +1,14 @@
 //
-//  FeedViewController.swift
+//  StoryPlayerViewController.swift
 //  Stories
 //
-//  Created by Feridun Erbas on 23.04.2020.
+//  Created by Feridun Erbas on 24.04.2020.
 //  Copyright © 2020 Feridun Erbas. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: BaseViewController<FeedViewModel> {
+class StoryPlayerViewController: BaseViewController<StoryPlayerViewModel> {
 
 	@IBOutlet weak var collectionView: UICollectionView!
 	
@@ -19,7 +19,7 @@ class FeedViewController: BaseViewController<FeedViewModel> {
 
 }
 
-extension FeedViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension StoryPlayerViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return collectionView.bounds.size
 	}
@@ -33,7 +33,7 @@ extension FeedViewController: UICollectionViewDelegate, UICollectionViewDelegate
 	}
 }
 
-extension FeedViewController: UICollectionViewDataSource {
+extension StoryPlayerViewController: UICollectionViewDataSource {
 	
 	private func initializeCollectionView() {
 		let nibName = String(describing: StoryGroupCell.self)
@@ -61,7 +61,7 @@ extension FeedViewController: UICollectionViewDataSource {
 	}
 }
 
-extension FeedViewController {
+extension StoryPlayerViewController {
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		print("offset: ", scrollView.contentOffset.x)

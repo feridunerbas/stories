@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		469BF824240E215A01613E6C /* Pods_StoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6EFCDC1D7D685A2FCF7216 /* Pods_StoriesTests.framework */; };
+		8651C03E24533D16002537D0 /* StoryPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8651C03D24533D16002537D0 /* StoryPlayerViewController.swift */; };
 		86B2E8802451DA96008CA72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B2E87F2451DA96008CA72D /* Assets.xcassets */; };
 		86B2E8832451DA96008CA72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B2E8812451DA96008CA72D /* LaunchScreen.storyboard */; };
 		86B2E88E2451DA96008CA72D /* StoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E88D2451DA96008CA72D /* StoriesTests.swift */; };
 		86B2E89F2451DDC1008CA72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E89C2451DDC1008CA72D /* AppDelegate.swift */; };
 		86B2E8A12451DDC1008CA72D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E89E2451DDC1008CA72D /* SceneDelegate.swift */; };
-		86B2E8A72451DF05008CA72D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8A52451DF05008CA72D /* FeedViewController.swift */; };
-		86B2E8A82451DF05008CA72D /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B2E8A62451DF05008CA72D /* FeedViewController.xib */; };
+		86B2E8A82451DF05008CA72D /* StoryPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B2E8A62451DF05008CA72D /* StoryPlayerViewController.xib */; };
 		86B2E8AC2451DF22008CA72D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8AB2451DF22008CA72D /* BaseViewController.swift */; };
 		86B2E8AF2451E058008CA72D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8AE2451E058008CA72D /* BaseViewModel.swift */; };
-		86B2E8B22451E19B008CA72D /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8B12451E19B008CA72D /* FeedViewModel.swift */; };
+		86B2E8B22451E19B008CA72D /* StoryPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8B12451E19B008CA72D /* StoryPlayerViewModel.swift */; };
 		86B2E8B52451E1FB008CA72D /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8B42451E1FB008CA72D /* AppDelegate+Injection.swift */; };
-		86B2E8B82451E258008CA72D /* Feed+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8B72451E258008CA72D /* Feed+Injection.swift */; };
+		86B2E8B82451E258008CA72D /* StoryPlayer+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8B72451E258008CA72D /* StoryPlayer+Injection.swift */; };
 		86B2E8BE2451E823008CA72D /* StoryGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2E8BC2451E823008CA72D /* StoryGroupCell.swift */; };
 		86B2E8BF2451E823008CA72D /* StoryGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B2E8BD2451E823008CA72D /* StoryGroupCell.xib */; };
 		FFEF6E0FCD2E7187F1279867 /* Pods_Stories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9CB8EAA1E659B09D49B864 /* Pods_Stories.framework */; };
@@ -41,6 +41,7 @@
 		740190ADC80BB3262B933860 /* Pods-StoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoriesTests.release.xcconfig"; path = "Target Support Files/Pods-StoriesTests/Pods-StoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		7DD2B3D3A41B8F852FD740D5 /* Pods-StoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-StoriesTests/Pods-StoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82E31C76AAC2C83B5057BE7F /* Pods-Stories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stories.debug.xcconfig"; path = "Target Support Files/Pods-Stories/Pods-Stories.debug.xcconfig"; sourceTree = "<group>"; };
+		8651C03D24533D16002537D0 /* StoryPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayerViewController.swift; sourceTree = "<group>"; };
 		86B2E8732451DA93008CA72D /* Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B2E87F2451DA96008CA72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B2E8822451DA96008CA72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,13 +51,12 @@
 		86B2E89C2451DDC1008CA72D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B2E89D2451DDC1008CA72D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86B2E89E2451DDC1008CA72D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86B2E8A52451DF05008CA72D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		86B2E8A62451DF05008CA72D /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		86B2E8A62451DF05008CA72D /* StoryPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryPlayerViewController.xib; sourceTree = "<group>"; };
 		86B2E8AB2451DF22008CA72D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		86B2E8AE2451E058008CA72D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		86B2E8B12451E19B008CA72D /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		86B2E8B12451E19B008CA72D /* StoryPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayerViewModel.swift; sourceTree = "<group>"; };
 		86B2E8B42451E1FB008CA72D /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
-		86B2E8B72451E258008CA72D /* Feed+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Injection.swift"; sourceTree = "<group>"; };
+		86B2E8B72451E258008CA72D /* StoryPlayer+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryPlayer+Injection.swift"; sourceTree = "<group>"; };
 		86B2E8BC2451E823008CA72D /* StoryGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryGroupCell.swift; sourceTree = "<group>"; };
 		86B2E8BD2451E823008CA72D /* StoryGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryGroupCell.xib; sourceTree = "<group>"; };
 		ED6EFCDC1D7D685A2FCF7216 /* Pods_StoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				86B2E8A92451DF10008CA72D /* Core */,
-				86B2E8A32451DECB008CA72D /* Feed */,
+				86B2E8A32451DECB008CA72D /* StoryPlayer */,
 				86B2E8A22451DEB0008CA72D /* Media */,
 				86B2E89B2451DDC1008CA72D /* App */,
 				86B2E87F2451DA96008CA72D /* Assets.xcassets */,
@@ -153,7 +153,7 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
-		86B2E8A32451DECB008CA72D /* Feed */ = {
+		86B2E8A32451DECB008CA72D /* StoryPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				86B2E8C02451E8B2008CA72D /* CellConfigurator */,
@@ -162,14 +162,14 @@
 				86B2E8B02451E17E008CA72D /* ViewModel */,
 				86B2E8A42451DEEB008CA72D /* View */,
 			);
-			path = Feed;
+			path = StoryPlayer;
 			sourceTree = "<group>";
 		};
 		86B2E8A42451DEEB008CA72D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				86B2E8A52451DF05008CA72D /* FeedViewController.swift */,
-				86B2E8A62451DF05008CA72D /* FeedViewController.xib */,
+				86B2E8A62451DF05008CA72D /* StoryPlayerViewController.xib */,
+				8651C03D24533D16002537D0 /* StoryPlayerViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 		86B2E8B02451E17E008CA72D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				86B2E8B12451E19B008CA72D /* FeedViewModel.swift */,
+				86B2E8B12451E19B008CA72D /* StoryPlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 		86B2E8B62451E24A008CA72D /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				86B2E8B72451E258008CA72D /* Feed+Injection.swift */,
+				86B2E8B72451E258008CA72D /* StoryPlayer+Injection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 			files = (
 				86B2E8832451DA96008CA72D /* LaunchScreen.storyboard in Resources */,
 				86B2E8BF2451E823008CA72D /* StoryGroupCell.xib in Resources */,
-				86B2E8A82451DF05008CA72D /* FeedViewController.xib in Resources */,
+				86B2E8A82451DF05008CA72D /* StoryPlayerViewController.xib in Resources */,
 				86B2E8802451DA96008CA72D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,14 +418,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B2E89F2451DDC1008CA72D /* AppDelegate.swift in Sources */,
-				86B2E8B82451E258008CA72D /* Feed+Injection.swift in Sources */,
+				86B2E8B82451E258008CA72D /* StoryPlayer+Injection.swift in Sources */,
 				86B2E8AF2451E058008CA72D /* BaseViewModel.swift in Sources */,
-				86B2E8B22451E19B008CA72D /* FeedViewModel.swift in Sources */,
+				86B2E8B22451E19B008CA72D /* StoryPlayerViewModel.swift in Sources */,
 				86B2E8BE2451E823008CA72D /* StoryGroupCell.swift in Sources */,
 				86B2E8B52451E1FB008CA72D /* AppDelegate+Injection.swift in Sources */,
 				86B2E8AC2451DF22008CA72D /* BaseViewController.swift in Sources */,
-				86B2E8A72451DF05008CA72D /* FeedViewController.swift in Sources */,
 				86B2E8A12451DDC1008CA72D /* SceneDelegate.swift in Sources */,
+				8651C03E24533D16002537D0 /* StoryPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
